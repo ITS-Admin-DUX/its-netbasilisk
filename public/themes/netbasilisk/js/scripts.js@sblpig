@@ -1,0 +1,9 @@
+(function ($) {
+	$(document).ready(function() {
+
+	$("#edit-openid-connect-client-generic-login").html("Editor Login");
+
+	$('#search-block-form #edit-actions #edit-submit').attr('aria-labelledby','search');
+
+	});
+})(jQuery);
