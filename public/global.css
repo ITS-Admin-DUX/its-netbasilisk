@@ -1,0 +1,260 @@
+
+html{
+	scroll-behavior:smooth;
+}
+@media screen and (prefers-reduced-motion:reduce) {
+	html {
+		scroll-behavior:auto;
+	}
+}
+
+body {
+	margin:0;
+	padding:0;
+	background:#ffffff;
+	font-family:'Nunito Sans',Montserrat,Arial,Helvetica,sans-serif;
+	color:#333333;
+	line-height:1.5em;
+}
+
+.visually-hidden {
+	position:absolute !important;
+	overflow:hidden;
+	clip:rect(1px, 1px, 1px, 1px);
+	width:1px;
+	height:1px;
+	word-wrap:normal;
+}
+.visually-hidden.focusable:active, .visually-hidden.focusable:focus {
+	position:static !important;
+	overflow:visible;
+	clip:auto;
+	width:auto;
+	height:auto;
+}
+
+div[class^="container-"] {
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+p {
+	margin-top:0;
+}
+
+h1 {
+	margin:0 0 1em 0;
+	color:#24687a;
+	line-height:1.3em;
+}
+
+.hero {
+	min-height:100vh;
+	margin:0;
+	padding:20px;
+	background-color:#042630;
+	background-image:url('network-nodes-bg.jpg');
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	font-size:1.25em;
+	color:#ffffff;
+	line-height:1.5;
+	text-align:center;
+}
+@media (max-width:768px) {
+	.hero {
+		background-size:cover;
+		background-attachment:scroll;
+	}
+}
+.hero img {
+	width:100%;
+	max-width:700px;
+	height:auto;
+	margin:33vh auto 0 auto;
+}
+.hero a {
+	transition:all .3s ease-in-out;
+}
+.hero a:link, .hero a:visited {
+	color:#ffffff;
+}
+.hero a:hover, .hero a:focus {
+	color:#ffcb05;
+	outline:none;
+}
+
+.banner {
+	max-width:960px;
+	margin:0 auto 0 auto;
+	padding:40px 20px 40px 20px;
+	text-align:center;
+}
+.banner img {
+	width:100%;
+	max-width:700px;
+	height:auto;
+	margin:0 auto 0 auto;
+}
+h1.home {
+	position:absolute;
+	text-indent:-999999px;
+}
+
+.navigation {
+	max-width:1240px;
+	margin:0 auto 0 auto;
+	padding:0;
+}
+.navigation .mobilebutton {
+	display:none;
+	visibility:hidden;
+}
+.navigation ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	display:flex;
+	flex-wrap:wrap;
+}
+.navigation ul li {
+	flex:1 0 25%;
+	text-align:center;
+}
+.navigation ul li a {
+	display:block;
+	margin:0;
+	padding:10px 20px 10px 20px;
+	border-bottom:5px solid transparent;
+	font-weight:bold;
+	color:#333333;
+	line-height:20px;
+	text-decoration:none;
+	transition:all .3s ease-in-out;
+}
+.navigation ul li a:hover {
+	border-bottom:5px solid #ffcb05;
+}
+
+@media (max-width:767px) {
+	.banner {
+		padding:20px;
+	}
+	.navigation .mobilebutton {
+		display:inline-block;
+		visibility:visible;
+		margin:0 20px 1rem 20px;
+		padding:10px;
+		border-radius:4px;
+		background-color:#24687a;
+		color:#ffffff;
+		font-size:1.5em;
+	}
+	.navigation .mobilebutton:hover, .navigation .mobilebutton:focus {
+		background-color:#555555;
+	}
+	.navigation .mobilebutton .icon-bar {
+		display:block;
+		width:22px;
+		height:2px;
+		border-radius:1px;
+		background-color:#ffffff;
+	}
+	.navigation .mobilebutton .icon-bar + .icon-bar {
+		margin-top:4px;
+	}
+	.navigation ul {
+		display:none;
+	}
+	.navigation ul li {
+		flex:0 0 100%;
+		text-align:left;
+	}
+	.navigation ul li a {
+		border-bottom:0;
+		padding:1em 20px 1em 20px;
+	}
+}
+
+.container-main {
+	background-color:#eff0f1;
+	border-top:1px solid #cccccc;
+}
+
+.page {
+	max-width:960px;
+	margin:0 auto 0 auto;
+	padding:3rem 20px 5rem 20px;
+	text-align:left;
+	line-height:175%;
+}
+.home.page {
+	display:flex;
+	flex-wrap:wrap;
+}
+.home-quote {
+	width:35%;
+	margin-right:5%;
+	font-size:2em;
+	color:#25687b;
+	line-height:1.35;
+}
+.home-text {
+	width:55%;
+	margin-left:5%;
+}
+@media (max-width:767px) {
+	.home-quote {
+		width:100%;
+		margin-right:0;
+	}
+	.home-text {
+		width:100%;
+		margin-left:0;
+	}
+}
+
+footer.container {
+	background:#333333;
+	color:#ffffff;
+}
+.footer {
+	display:flex;
+	flex-flow:row wrap;
+	max-width:1240px;
+	margin:0 auto 0 auto;
+	padding:20px;
+	text-align:left;
+}
+.footer .um-logo {
+	margin: 0 40px 2em 0;
+    padding: 0;
+    white-space: nowrap;
+}
+.footer .um-logo img {
+	width:100%;
+	max-width:142px;
+	height:auto;
+}
+.footer .footer-links {
+	margin: 0 40px 2em 0;
+    padding: 0;
+    white-space: nowrap;
+}
+.footer .footer-links ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+footer.container .region-footer a:link, footer.container .region-footer a:visited {
+	color:#ffffff;
+	text-decoration:none;
+}
+footer.container .region-footer a:hover, footer.container .region-footer a:active, footer.container .region-footer a:focus {
+	color:#ffcb05;
+	text-decoration:underline;
+}
+
